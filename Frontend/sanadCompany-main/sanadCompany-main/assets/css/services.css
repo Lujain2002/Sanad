@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+     background-color: #19375C;
+      scroll-behavior: auto; /* نعطل behavior العادي */
+}
+
+
+/* header */
+
+ .navbar {
+    background-color: #4175B0;
+}
+.logo-navbar {
+    width: 90px;
+    height: 90px;
+}
+.ar-en {
+    transition: color 0.5s linear;
+    left: 120px;
+    top: 40px;
+}
+.ar-en:hover {
+    
+color: white !important;
+}
+.navbar a {
+        transition: all 0.5s linear;
+
+}
+ /* to navbar on small screen */
+
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      padding: 1rem;
+      border-radius: 0 0 12px 12px;
+      transition: all 0.4s ease-in-out;
+      margin-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: #444;
+    }
+  }
+  /* end navbar */
+  /* first sectin in header */
+  .titleSetion h1{
+    font-size: 60px;
+  }
+    .titleSetion p{
+    font-size: 20px;
+  }
+  @media(max-width: 1200px) {
+    .titleSetion h1{
+    font-size: 40px;
+  
+  }
+  }
+   @media(max-width: 768px) {
+    .titleSetion h1,  .titleSetion p{
+  
+    text-align: center;
+  }
+  }
+
+  /* end header */
+
+
+ /* start section contact */
+        .contact {
+          background-color: #19375C;
+        }
+        .contact input,.contact textarea {
+          background-color: #395170;
+        }
+       .contact input:focus,
+.contact textarea:focus {
+  color: white !important;
+  background-color: #19375C !important; /* الخلفية تبقى بيضاء */
+}
+.contact button[type="submit"] {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: #4175B0;
+  color: white;
+  box-shadow: 0 4px 12px rgba(65, 117, 176, 0.4);
+}
+    /* end section contact */
+      /* start footer */
+  .footer {
+      background-color: #4175B0;
+      padding: 40px 0;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #212529;
+          transition: color 0.3s ease;
+    }
+    .footer a:hover {
+      color: #ffffff !important; 
+    }
+     .social-icon {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+  }
+
+  .social-icon:hover {
+    color: #ffffff !important; /* يغير اللون إلى الأبيض الكامل عند المرور */
+  }
+
+
+
+
+    /* end foooter */
+  
+
+    /* card of service */
+
+
+    .card {
+         background-color: #3B5574;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+}

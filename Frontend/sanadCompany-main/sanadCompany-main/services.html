@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>SANAD - Services</title>
+             <link href="./assets/lang-toggle.js" rel="preload" as="script">
+    <link href="./assets/img/logo.jpg" rel="shortcut icon" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/services.css">
+</head>
+<body>
+        <!-- start header -->
+    <header>
+        <div class=" header-main-div  d-flex flex-column justify-content-between ">
+        <!-- navbar -->
+            <nav class="navbar navbar-expand-lg  navbar-dark py-0">
+            <div class="container  ">
+                <a class="navbar-brand logo-navbar col-2 mt-2" href="index.html"><img src="./assets/img/sanadLogo.png" class="w-100" alt="logo of sanad company"></a>
+<!-- زر اللغة (يوضع يسارًا دائمًا) -->
+    <button class="btn btn-sm btn-outline-light d-none d-lg-inline" id="langToggle">العربية</button>           
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end flex-grow-0 col-9" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 " id="navList">
+                   <li class="nav-item">
+                    <a class="nav-link active text-white"  aria-current="page" href="index.html">Back to Homepage</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link text-white" onclick="slowScroll(event, 'cybersecurity')" href="#cybersecurity">Services</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link text-white" onclick="slowScroll(event, 'contact')" href="#contact">Contact</a>
+                    </li>
+                <!-- زر اللغة في الشاشات الصغيرة -->
+        <li class="nav-item mt-3 d-lg-none">
+          <button class="btn btn-sm btn-outline-light w-100"  id="langToggle1">العربية</button>
+        </li>
+                </ul>
+                
+                </div>
+            </div>
+            </nav>
+<!-- end navbar -->
+
+        </div>
+
+
+    </header>
+     <!-- end header -->
+    <!-- start main -->
+     <main>
+        <!-- Cybersecurity Services Section -->
+<div class="container py-5">
+
+    <div class="row py-5" id="cybersecurity">
+        <div class="col-md-12" id="services-section">
+            <h1 class="h3 text-white mb-4">Our Services</h1>
+            <p class="text-white-50">
+                We provide advanced solutions at competitive prices without compromising quality. Every project undergoes meticulous processes including research, planning, implementation, and continuous improvement, leveraging AI to maximize results.
+            </p>
+
+            <!-- <h5 class="text-white mt-4">Digital Marketing Services</h5>
+            <ul class="text-white-50">
+                <li><strong>AI-Driven Strategy Development:</strong> We create data-driven marketing strategies tailored to your goals. Utilizing smart analytics tools to profile audiences, predict behavior, and measure performance. Our plans focus on boosting visibility, enhancing engagement, and increasing conversion rates.</li>
+                <li><strong>Smart Advertising Campaigns:</strong> Managing AI-powered ad campaigns across platforms like Meta, Google, TikTok, and LinkedIn. Using real-time targeting algorithms and dynamic bidding to ensure maximum ROI. Continuous optimization based on advanced analytics and predictive models.</li>
+                <li><strong>SEO and SEM Optimization:</strong> Applying machine learning techniques to improve keywords and site experience. AI-supported SEM campaigns deliver faster results and better conversion rates. Interactive performance dashboards highlight growth and effectiveness metrics.</li>
+            </ul>
+
+            <h5 class="text-white mt-4">Website & Application Design and Development</h5>
+            <ul class="text-white-50">
+                <li>We build scalable websites, applications, and e-commerce platforms with intelligent features.</li>
+                <li>Integrating chatbots, personalization systems, and user behavior tracking.</li>
+                <li>Security monitoring through AI systems ensures full protection across all devices.</li>
+            </ul>
+
+            <h5 class="text-white mt-4">Graphic Design and Animation</h5>
+            <ul class="text-white-50">
+                <li>Professional infographics powered by smart design tools to turn complex data into clear visual messages.</li>
+                <li>Producing animations with cutting-edge techniques supported by AI in editing and scripting.</li>
+                <li>Integrating these elements into campaigns for maximum impact and reach.</li>
+            </ul>
+
+            <h5 class="text-white mt-4">Domain Registration and Secure Hosting</h5>
+            <ul class="text-white-50">
+                <li>Providing domain registration services aligned with your brand identity.</li>
+                <li>Hosting services include intelligent threat detection and high availability mechanisms.</li>
+                <li>24/7 technical monitoring ensures service continuity and security.</li>
+            </ul>
+
+            <h5 class="text-white mt-4">Business Development and Strategic Consulting</h5>
+            <ul class="text-white-50">
+                <li><strong>Smart Business Analysis:</strong> Utilizing research tools, data analytics, and intelligent modeling to diagnose challenges and design effective growth strategies. Process automation solutions increase efficiency and reduce costs. Predictive insights guide decision-making and support market expansion.</li>
+                <li><strong>AI-Supported Project Management:</strong> Implementing Agile and Waterfall methodologies backed by smart planning and risk analysis tools. Real-time dashboards track progress, task distribution, and bottlenecks. Continuous follow-up and feedback ensure goal alignment and stakeholder expectations.</li>
+            </ul>
+
+            <h5 class="text-white mt-4">Management Information Systems (MIS)</h5>
+            <ul class="text-white-50">
+                <li>Developing AI-powered management information platforms to digitize, link, and optimize processes.</li>
+                <li>Automated reports, smart alerts, and performance monitoring enhance decision-making efficiency.</li>
+                <li>High-performance, accurate systems support reliability, compliance, and scalability.</li>
+            </ul>
+
+            <h5 class="text-white mt-4">Data Analysis and Visualization</h5>
+            <ul class="text-white-50">
+                <li>Transforming raw data into strategic insights through intelligent analysis and modeling.</li>
+                <li>Designing interactive dashboards to monitor performance and detect recurring patterns.</li>
+                <li>Customized solutions to empower decision-makers with clear, real-time information.</li>
+            </ul>
+
+            <h5 class="text-white mt-4">Intelligent Process Documentation</h5>
+            <ul class="text-white-50">
+                <li>Using AI-supported documentation tools for efficient capture and update of procedures.</li>
+                <li>Automatic updates and contextual tagging ensure version control and easy access.</li>
+                <li>Ideal for training, standardizing procedures, and regulatory compliance.</li>
+            </ul> -->
+
+            <!-- <p class="text-white-50 mt-4">
+                At Sanad Company, we are not just a service provider — we are an active strategic partner in leading your digital success and growth powered by AI. Whether you are starting out or expanding, we offer smart solutions that grow with your business.
+            </p> -->
+        </div>
+    </div>
+
+</div>
+<!--end Cybersecurity Services Section -->
+
+        <!-- start service  -->
+
+<section id="Services" class="section no-overflow text-white py-5">
+  <div class="container">
+    <div class="mb-5">
+      <div class="h5 text-white">Our Services</div>
+      <h2 class="fw-bold">   At Sanad, we are not just a service provider, but a strategic partner actively leading your digital success and growth powered by AI. Whether you are starting out or scaling up, we offer smart solutions that grow with your business.
+    </h2>
+    </div>
+    <div class="row g-4" id="servicesContainer">
+
+      <!-- Service 1 -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-white">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <h5 class="card-title text-white">AI-Powered Digital Marketing</h5>
+              <p class="card-text small text-white-50 mt-3">
+                Data-driven strategies and audience analytics to boost visibility and conversions.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+      <!-- Service 2 -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-white">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <h5 class="card-title text-white">Smart Advertising Campaigns</h5>
+              <p class="card-text small text-white-50 mt-3">
+                AI-backed ad management on major platforms with dynamic targeting and bidding.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+      <!-- Service 3 -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-white">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <h5 class="card-title text-white">SEO & SEM Optimization</h5>
+              <p class="card-text small text-white-50 mt-3">
+                Machine learning improves keywords, site experience, and conversion rates.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+      <!-- Service 4 -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-white">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <h5 class="card-title text-white">Web & App Development</h5>
+              <p class="card-text small text-white-50 mt-3">
+                Scalable websites, e-commerce, chatbots, and AI personalization with security monitoring.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+      <!-- Service 5 -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-white">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <h5 class="card-title text-white">Graphic & Animation Design</h5>
+              <p class="card-text small text-white-50 mt-3">
+                Professional infographics and AI-assisted animations for impactful campaigns.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+      <!-- Service 6 -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-white">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <h5 class="card-title text-white">Domain Registration & Secure Hosting</h5>
+              <p class="card-text small text-white-50 mt-3">
+                Brand-aligned domains with intelligent threat detection and 24/7 monitoring.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+      <!-- Service 7 -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-white">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <h5 class="card-title text-white">Business Development & Strategy</h5>
+              <p class="card-text small text-white-50 mt-3">
+                Smart analysis, process automation, and predictive insights to drive growth.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+      <!-- Service 8 -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-white">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <h5 class="card-title text-white">AI-Powered Project Management</h5>
+              <p class="card-text small text-white-50 mt-3">
+                Agile and waterfall methods supported by smart planning and risk analysis tools.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+      <!-- Service 9 -->
+      <!-- <div class="col-md-6 col-lg-4">
+        <a href="#" class="text-decoration-none text-white">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <h5 class="card-title text-white">Management Information Systems (MIS)</h5>
+              <p class="card-text small text-white-50 mt-3">
+                AI-driven MIS platforms for automated reporting, alerts, and enhanced decision-making.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+
+    </div>
+  </div>
+</section>
+
+<!-- end service -->
+
+
+           <!-- start section Contact Us -->
+<section class="contact" id="contact">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="text-white">Contact <span class="text-primary">Us</span></h2>
+    </div>
+
+    <div class="row">
+      <!-- Left Column: Contact Form -->
+      <div class="col-md-6 mb-4" >
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label text-white-50">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-white-50">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label text-white-50">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="e.g. 0791234567" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label text-white-50">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-outline-primary w-100">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right Column: Contact Info + Map -->
+      <div class="col-md-6" >
+        <div class="mb-4">
+          <h5 class="text-white">Phone</h5>
+          <p class="text-white-50">+962 79 123 4567</p>
+        </div>
+        <div class="mb-4">
+          <h5 class="text-white">Email</h5>
+          <p class="text-white-50">info@example.com</p>
+        </div>
+        <div class="mb-4">
+          <h5 class="text-white">Follow Us</h5>
+          <a href="#" class="text-white-50 me-2"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white-50 me-2"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-white-50"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+        <div class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=PUT_YOUR_VALID_MAP_LINK_HERE"
+            width="100%" height="250" style="border:0;" 
+            allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section Contact Us -->
+
+
+
+     </main>
+
+     <!-- end main -->
+
+<!-- start footer -->
+ 
+  <footer class="footer position-relative  ">
+    
+    <div class="container position-relative">
+      <!-- Links Menu -->
+      <div class="row mb-4">
+        <div class="col-md-6 text-md-start text-white-50 text-center">
+          <a href="index.html" class="me-3 text-white-50">Homepage</a>
+        </div>
+        <div class="col-md-6 text-md-end text-center">
+         
+           <a href="#" class="social-icon text-white-50"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon text-white-50"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon text-white-50"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon text-white-50"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon text-white-50"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <hr class="text-white">
+
+      <!-- Bottom Row -->
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">
+          <span class="text-white-50">© Sanad Information Technology. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-md-end text-center">
+          <a href="#" class="me-3 text-white-50">Privacy Policy</a>
+          <a href="#" class="text-white-50">Terms & Conditions</a>
+        </div>
+       
+      </div>
+    </div>
+     
+  </footer>
+
+
+<!-- end footer -->
+
+
+
+
+    <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/lang-toggle.js"></script>
+      <script src="./assets/js/Services.js"></script>
+       <script src="./assets/js/ServicePage.js"></script>
+
+</body>
+</html>

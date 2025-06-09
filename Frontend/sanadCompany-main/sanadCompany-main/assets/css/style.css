@@ -1,0 +1,512 @@
+body {
+    margin: 0;
+    padding: 0;
+     scroll-behavior: auto; /* نعطل behavior العادي */
+}
+/* header */
+
+
+header {
+    background-image: url("../../testImg/3.jpg");
+    min-height: 110vh;
+    background-size: cover;
+}
+.header-main-div {
+     min-height: 110vh;
+} 
+.logo-navbar {
+    width: 90px;
+    height: 90px;
+}
+.ar-en {
+    transition: color 0.5s linear;
+    left: 120px;
+    top: 40px;
+}
+.ar-en:hover {
+    
+color: white !important;
+}
+.navbar a {
+        transition: all 0.5s linear;
+
+}
+.navbar {
+        background-color: #4175B0;
+
+}
+ /* to navbar on small screen */
+
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      padding: 1rem;
+      border-radius: 0 0 12px 12px;
+      transition: all 0.4s ease-in-out;
+      margin-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: #444;
+    }
+  }
+  .sanad-system {
+    transition: all 0.3s;
+       background-color: #254367 ;
+    border: none;
+}
+.btn-service {
+   transition: all 0.3s;
+  background-color: #254164;
+  border: none;
+}
+  /* end navbar */
+  /* first sectin in header */
+  .titleSetion h1{
+    font-size: 60px;
+  }
+    .titleSetion p{
+    font-size: 20px;
+  }
+  @media(max-width: 1200px) {
+    .titleSetion h1{
+    font-size: 40px;
+  
+  }
+  }
+   @media(max-width: 768px) {
+    .titleSetion h1,  .titleSetion p{
+  
+    text-align: center;
+  }
+  }
+
+  /* end header */
+  /* start main */
+  /* about */
+  .about {
+    background-color: #294568;
+  }
+  .about .heading-h2 {
+    font-size:42px ;
+  }
+    .about .title {
+      font-size: 18px;
+    }
+
+/* end about */
+/* start parallax-img */
+.parallax-container {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.parallax-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%; /* تغطية كافية عند التحريك */
+  object-fit: cover;
+  transform: translateY(0px);
+  transition: transform 0.05s linear;
+  z-index: -1;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  padding: 150px 40px;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+} .parallax-container {
+      position: relative;
+      height: 400px;        /* ارتفاع الـ div */
+      overflow: hidden;     /* يمنع ظهور أي شيء خارج */
+    }
+
+    .parallax-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200%;          /* الصورة أطول من div */
+      object-fit: cover;
+      transform: translateY(0);
+      will-change: transform;
+      transition: transform 0.1s ease-out;
+      z-index: -1;
+    }
+
+    .parallax-content {
+      position: relative;
+      z-index: 2;
+      padding: 140px 20px 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+/* end parallax-img */
+/* start service */
+.service {
+  background-color: #19375C;
+}
+
+.service  .heading-h2 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.service  .heading-h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.service-card-v3 {
+  background-color: #3B5574;
+  min-height: 180px;
+}
+.service .arrow {
+  position: absolute;
+  right: 10px;
+  bottom: 40px;
+}
+  
+/* تأثير hover */
+.custom-hover {
+  border: 1px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.custom-hover:hover {
+  transform: scale(1.03); /* تكبير بسيط */
+  border-color: #4175b0;  /* بوردر عند التحويم */
+}
+/* end service */
+/* start Wataneyya */
+
+   .section {
+      position: relative;
+      overflow: hidden;
+      padding: 60px 20px;
+    }
+
+   
+    .container-5 {
+      max-width: 1200px;
+     
+      position: relative;
+      z-index: 2;
+    }
+
+    .heading-h2-2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .paragraph-9 {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .cta-image-v1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .cta-v1-cover-2 {
+      background-color: transparent;
+      background-image: linear-gradient(
+        90deg,
+        #10121a 31%,
+        #10121acc 50%,
+        #10121a99 59%,
+        #10121a00 68%
+      );
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .content-wrapper {
+      position: relative;
+      z-index: 3;
+    }
+
+    .narrow {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .heading-h2-2 {
+        font-size: 2rem;
+      }
+
+      .paragraph-9 {
+        font-size: 1rem;
+      }
+    }
+    /* end Wataneyya */
+    /* start pargraph */
+    main .prodacts {
+      background-color: #19375C;
+    }
+    /* end pargraph */
+/* start prodact */
+/* التأثير على بطاقات المنتجات فقط */
+#productTabsContent .product-card {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  cursor: pointer;
+}
+
+#productTabsContent .product-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.25);
+  z-index: 10;
+}
+ @media (max-width: 576px) {
+    #productTabs .nav-link {
+      white-space: nowrap;
+      font-size: 10px;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+
+/* #productTabsContent .product-card .card-img-top {
+  transition: transform 0.35s ease;
+}
+
+#productTabsContent .product-card:hover .card-img-top {
+  transform: scale(1.08);
+} */
+
+
+
+
+
+
+
+
+
+
+/* end prodact */
+/* start parenters */
+   .partners-section {
+      padding: 60px 20px;
+    background-color: #19375C;
+      text-align: center;
+    }
+    .partners-title {
+      font-size: 32px;
+      margin-bottom: 40px;
+      font-weight: bold;
+      color: white;
+    }
+    .carousel-item {
+      padding: 20px 0;
+    }
+    .carousel-item .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .carousel-item img {
+      max-height: 80px;
+      width: auto;
+    
+    }
+    
+    .carousel-indicators [data-bs-target] {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+  /* Default: أسهم بحجم 2.5rem كما عندك */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #3B5574;
+  border-radius: 50%;
+  background-size: 1.5rem 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+    .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml,%3csvg fill='%23fff' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11 1L3 8l8 7V1z'/%3e%3c/svg%3e");
+    }
+    .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml,%3csvg fill='%23fff' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5 1l8 7-8 7V1z'/%3e%3c/svg%3e");
+    }
+    .carousel-indicators {
+      bottom: -66px !important;
+    }
+    /* للشاشات الصغيرة جداً - موبايل صغير */
+@media (max-width: 400px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: 1rem 1rem;
+  }
+}
+
+/* للشاشات المتوسطة - تابلت */
+@media (min-width: 401px) and (max-width: 768px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+    background-size: 1.2rem 1.2rem;
+  }
+}
+
+/* تعديل موقع الأسهم على شاشات صغيرة */
+@media (max-width: 576px) {
+  .carousel-control-prev {
+    left: 5px; /* أقل مسافة من اليسار */
+  }
+  .carousel-control-next {
+    right: 5px; /* أقل مسافة من اليمين */
+  }
+}
+
+/* تعديل موقع الأسهم على شاشات أكبر */
+@media (min-width: 577px) {
+  .carousel-control-prev {
+    left: 15px;
+  }
+  .carousel-control-next {
+    right: 15px;
+  }
+}
+
+/* end paresters */
+/* start blog section */
+.blog-section {
+  background-color: #19375C;
+}
+.blog-section .card{
+  background-color: #254164;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.blog-section .card h3 {
+  color: #cbc8c8;
+}
+.blog-section .card p {
+      color: rgba(255, 255, 255, 0.86);
+}
+ .blog-section .btn-custom {
+  background-color: transparent;
+  color: #25292D;
+  border: 2px solid #25292D;
+  border-radius: 50px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+ .blog-section .btn-custom:hover {
+  background-color: #25292D;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* end blog section */
+
+
+    /* start section contact */
+        .contact {
+          background-color: #19375C;
+        }
+        .contact input,.contact textarea {
+          background-color: #395170;
+        }
+       .contact input:focus,
+.contact textarea:focus {
+  color: white !important;
+  background-color: #19375C !important; /* الخلفية تبقى بيضاء */
+}
+.contact button[type="submit"] {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: #4175B0;
+  color: white;
+  box-shadow: 0 4px 12px rgba(65, 117, 176, 0.4);
+}
+    /* end section contact */
+    /* start footer */
+ .footer {
+      background-color: #4175B0;
+      padding: 40px 0;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #212529;
+          transition: color 0.3s ease;
+    }
+    .footer a:hover {
+      color: #ffffff !important; 
+    }
+     .social-icon {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+  }
+
+  .social-icon:hover {
+    color: #ffffff !important; /* يغير اللون إلى الأبيض الكامل عند المرور */
+  }
+  footer a.btn{
+        transition: all 0.3s ease;
+
+  }
+footer a.btn:hover {
+  background-color: #395170;
+ 
+}
+
+@media (max-width:450px){
+  .forter-aSide {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+    /* end foooter */
+  

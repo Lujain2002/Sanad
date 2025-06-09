@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>سند | بوابتك نحو التميّز الرقمي المدعوم بالذكاء الاصطناعي</title>
+
+    <link href="../assets/img/logo.jpg" rel="shortcut icon" type="image/x-icon">
+      <link href="../assets/lang-toggle.js" rel="preload" as="script">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- start header-->
+<header>
+  <div class="header-main-div  d-flex flex-column justify-content-between">
+
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-dark  py-0">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <!-- شعار الشركة -->
+        <a class="navbar-brand me-3" href="#">
+          <img src="../assets/img/sanadLogo.png" alt="شعار شركة سند" style="height: 90px;">
+        </a>
+
+        <!-- زر اللغة (يوضع يسارًا دائمًا) -->
+        <button class="btn btn-sm btn-outline-light d-none d-lg-inline" id="langToggle">English</button>
+
+        <!-- زر التوغّل للجوال -->
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="تبديل القائمة">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- محتوى القائمة -->
+        <div class="collapse navbar-collapse justify-content-end mt-3 mt-lg-0" id="navbarContent">
+          <ul class="navbar-nav p-0 mb-2 mb-lg-0 align-items-lg-center" id="navList">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="services.html">خدماتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="prodacts.html">منتجاتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" onclick="slowScroll(event, 'partners')" href="#partners">شركاؤنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">تواصل معنا</a>
+            </li>
+
+            <!-- زر الدخول (يظهر في الجوال بشكل كامل) -->
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a href="" class="btn sanad-system btn-primary px-4 rounded-pill fw-bold w-100 w-lg-auto">
+                الدخول إلى نظام سند القانوني
+              </a>
+            </li>
+
+            <!-- زر اللغة في الشاشات الصغيرة -->
+            <li class="nav-item mt-3 d-lg-none">
+              <button class="btn btn-sm btn-outline-light w-100"  id="langToggle1">English</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- نهاية شريط التنقل -->
+
+    <!-- القسم الرئيسي في الرأس -->
+    <section class="titleSetion container text-white">
+      <div class="row justify-content-between">
+        <div class="start col-12 col-md-5 mb-2">
+          <h1>سند | بوابتك نحو التميز الرقمي المدعوم بالذكاء الاصطناعي</h1>
+        </div>
+
+        <div class="end col-12 col-md-5 mt-2 mb-3">
+          <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+            <a href="#service" class="btn-service btn btn-primary px-4 rounded-pill fw-bold">استعرض خدماتنا</a>
+            <a href="#prodacts" class="btn btn-outline-light px-4 rounded-pill fw-bold">شاهد أعمالنا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- نهاية القسم -->
+
+  </div>
+</header>
+<!--end header-->
+<!-- start main -->
+<main>
+    <!-- start about -->
+
+<div class="about text-white py-5" id="about">
+  <div class="container">
+    <div class="row">
+
+      <!-- القسم الأيسر: النص -->
+      <div class="start col-md-6 mb-4 mb-md-0" data-aos="fade-up">
+        <div class="title">من نحن</div>
+        <h2 class="heading-h2">الريادة في التحول الرقمي المدعوم بالذكاء الاصطناعي</h2>
+        <p class="paragraph-4 mt-3">
+          في شركة سند للحلول الرقمية، ندمج الذكاء الاصطناعي في جميع خدماتنا، ممزوجين بين الابتكار والتقنية المتقدمة من الكويت إلى الأسواق العالمية لمساعدة شركائنا على الازدهار رقميًا.
+        </p>
+        <a href="about.html" class="btn btn-outline-light mt-3">اعرف المزيد</a>
+      </div>
+
+      <!-- القسم الأيمن: الأيقونات -->
+      <div class="end col-md-6" data-aos="fade-up">
+        <div class="row text-center">
+          <div class="col-6 mb-4">
+            <div class="icon mb-2">
+              <i class="fas fa-eye fa-2x"></i>
+            </div>
+            <h5>رؤيتنا</h5>
+            <p class="small">
+              أن نقود الابتكار الرقمي من خلال تمكين شركائنا بتقنيات الذكاء الاصطناعي لتحقيق نجاح مستدام.
+            </p>
+          </div>
+          <div class="col-6 mb-4">
+            <div class="icon mb-2">
+              <i class="fas fa-bullseye fa-2x"></i>
+            </div>
+            <h5>رسالتنا</h5>
+            <p class="small">
+              تقديم حلول مخصصة مدعومة بالذكاء الاصطناعي تمكّن عملاءنا من تحقيق أقصى إمكاناتهم.
+            </p>
+          </div>
+          <div class="col-6 mb-4">
+            <div class="icon mb-2">
+              <i class="fas fa-chart-line fa-2x"></i>
+            </div>
+            <h5>أهدافنا</h5>
+            <p class="small">
+              أن نكون من بين أفضل 10 مزودي حلول رقمية في المنطقة خلال 5 سنوات من خلال تعزيز الابتكار ونجاح العملاء.
+            </p>
+          </div>
+          <div class="col-6 mb-4">
+            <div class="icon mb-2">
+              <i class="fas fa-handshake fa-2x"></i>
+            </div>
+            <h5>قيمنا</h5>
+            <p class="small">
+              النزاهة، الابتكار، التميز، الاعتمادية، الالتزام بالمواعيد، الشفافية، السرية، والمسؤولية المجتمعية.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- end about -->
+  <!-- strat parallax img -->
+
+ <div class="parallax-container">
+  <img src="../assets/img/backgeroundSections.jpg" class="parallax-img" alt="Background Image">
+  <!-- Optional content -->
+  <!--
+  <div class="parallax-content">
+    <h2>Parallax Section</h2>
+    <p>This is a demo of a parallax effect inside a fixed section</p>
+  </div>
+  -->
+</div>
+ <!-- end parallax img -->
+  <!-- start service -->
+<section class="service py-5 text-white" id="service">
+  <div class="container">
+    <!-- العنوان والوصف -->
+    <div class="mb-5">
+      <div class="title text-uppercase mb-3">خدماتنا</div>
+      <h2 class="heading-h2">مجموعة شاملة من خدمات تكنولوجيا المعلومات والذكاء الاصطناعي</h2>
+      <p class="paragraph">
+        نقدم حلولاً متقدمة وبأسعار تنافسية دون المساس بالجودة. يخضع كل مشروع لبحث وتخطيط وتنفيذ وتحسين مستمر، مع توظيف الذكاء الاصطناعي لتحقيق أقصى النتائج. تشمل خبراتنا استراتيجيات التسويق الرقمي المدعومة بالذكاء الاصطناعي، الحملات الإعلانية الذكية، تحسين محركات البحث والإعلانات، تطوير المواقع والتطبيقات الذكية، التصميم الجرافيكي والرسوم المتحركة، تسجيل وحجز النطاقات والاستضافة الآمنة، تطوير الأعمال والاستشارات الاستراتيجية، أنظمة المعلومات الإدارية المدعومة بالذكاء الاصطناعي، تحليل البيانات والتصور البياني، وتوثيق العمليات الذكية. في جوهرنا، نحن شريك استراتيجي ملتزم بدفع نجاحك الرقمي ونموك من خلال حلول مبتكرة مدعومة بالذكاء الاصطناعي مصممة خصيصًا لكل مرحلة من رحلتك التجارية.
+      </p>
+    </div>
+
+    <!-- شبكة الخدمات -->
+    <div class="row g-4">
+      
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="services.html" class="service-card-v3 hover-service-card d-block p-4 text-white-50 h-100 shadow-sm custom-hover text-decoration-none position-relative">
+          <h3 class="heading-h3 mb-3">التسويق الرقمي المدعوم بالذكاء الاصطناعي</h3>
+          <p>استراتيجيات معتمدة على البيانات، وتحليل الجماهير، وقياس الأداء لزيادة الظهور والتفاعل.</p>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="services.html" class="service-card-v3 hover-service-card d-block p-4 text-white-50 h-100 shadow-sm custom-hover text-decoration-none position-relative">
+          <h3 class="heading-h3 mb-3">حملات إعلانية ذكية</h3>
+          <p>حملات مدعومة بالذكاء الاصطناعي على منصات مثل Meta وGoogle وTikTok مع استهداف فوري ومزايدة ديناميكية.</p>
+        </a>
+      </div>
+      
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="services.html" class="service-card-v3 hover-service-card d-block p-4 text-white-50 h-100 shadow-sm custom-hover text-decoration-none position-relative">
+          <h3 class="heading-h3 mb-3">تحسين محركات البحث والإعلانات</h3>
+          <p>تحسين الكلمات المفتاحية عبر التعلم الآلي، حملات SEM أسرع، ولوحات أداء تفاعلية.</p>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="services.html" class="service-card-v3 hover-service-card d-block p-4 text-white-50 h-100 shadow-sm custom-hover text-decoration-none position-relative">
+          <h3 class="heading-h3 mb-3">تطوير المواقع والتطبيقات</h3>
+          <p>مواقع قابلة للتوسع، منصات تجارة إلكترونية، روبوتات دردشة، تخصيص المحتوى، وأنظمة أمان ذكية.</p>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="services.html" class="service-card-v3 hover-service-card d-block p-4 text-white-50 h-100 shadow-sm custom-hover text-decoration-none position-relative">
+          <h3 class="heading-h3 mb-3">التصميم الجرافيكي والرسوم المتحركة</h3>
+          <p>تصميم إنفوجرافيك، تصميم مدعوم بالذكاء الاصطناعي، ورسوم متحركة بصرية مؤثرة للحملات.</p>
+        </a>
+      </div>
+      
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="services.html" class="service-card-v3 hover-service-card d-block p-4 text-white-50 h-100 shadow-sm custom-hover text-decoration-none position-relative">
+          <h3 class="heading-h3 mb-3">تسجيل النطاقات والاستضافة</h3>
+          <p>خدمات نطاقات متوافقة مع العلامة التجارية، اكتشاف ذكي للتهديدات، ومراقبة على مدار الساعة لضمان الجهوزية والأمان.</p>
+        </a>
+      </div>
+      
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="services.html" class="service-card-v3 hover-service-card d-block p-4 text-white-50 h-100 shadow-sm custom-hover text-decoration-none position-relative">
+          <h3 class="heading-h3 mb-3">تطوير الأعمال والاستشارات الاستراتيجية</h3>
+          <p>تحليل ذكي للأعمال، أتمتة العمليات، رؤى تنبؤية، واستراتيجيات لتوسيع السوق.</p>
+        </a>
+      </div>
+      
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="services.html" class="service-card-v3 hover-service-card d-block p-4 text-white-50 h-100 shadow-sm custom-hover text-decoration-none position-relative">
+          <h3 class="heading-h3 mb-3">أنظمة المعلومات الإدارية المدعومة بالذكاء الاصطناعي</h3>
+          <p>تقارير آلية، تنبيهات ذكية، تتبع الأداء، وأنظمة معلومات موثوقة وقابلة للتوسع.</p>
+        </a>
+      </div>
+      
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="services.html" class="service-card-v3 hover-service-card d-block p-4 text-white-50 h-100 shadow-sm custom-hover text-decoration-none position-relative">
+          <h3 class="heading-h3 mb-3">تحليل البيانات وتوثيق العمليات</h3>
+          <p>رؤى استراتيجية للبيانات، لوحات معلومات تفاعلية، توثيق العمليات بالذكاء الاصطناعي، وإدارة النسخ.</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- end service -->
+   <!-- start Wataneyya Accelerate -->
+<section id="accelerate" class="section cta-v1">
+  <div class="w-layout-blockcontainer container-5 cta-v1 w-container">
+    <div class="content-wrapper narrow">
+      <div class="content-wrap-2">
+        <div class="title-wrap-2">
+          <h2 class="heading-h2-2 text-white">سند: بوابتك نحو التميّز الرقمي المدعوم بالذكاء الاصطناعي</h2>
+        </div>
+        <p class="paragraph-9">
+          في "سند"، نحن أكثر من مجرد مزود خدمات — نحن شريكك الاستراتيجي في قيادة النجاح والتحول الرقمي، بالاعتماد على تقنيات الذكاء الاصطناعي. سواء كنت في بداية رحلتك أو في مرحلة التوسع، نقدم حلولًا ذكية تنمو مع أعمالك وتواكب طموحاتك.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <img 
+    sizes="(max-width: 3483px) 100vw, 3483px" 
+    alt="صورة مستقبلية وطنية" 
+    src="../assets/img/altertsetion.jpg" 
+    loading="lazy" 
+    class="cta-image-v1"
+  >
+
+  <div class="cta-v1-cover-2 position-absolute " style="background-image: linear-gradient(270deg, #10121a 31%, #10121acc 50%, #10121a99 59%, #10121a00 68%) !important;
+"></div>
+</section>
+
+   <!-- end Wataneyya Accelerate -->
+     <!-- prodact Section -->
+<section id="prodacts" class="prodacts text-white">
+  <!-- بداية قسم منتجاتنا -->
+  <section id="our-products" class="section portfolio-grid py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="text-white">منتجاتنا</h2>
+        <p class="text-white">منتجات رقمية مدعومة بالذكاء الاصطناعي مصممة لتسريع النمو وتعزيز الابتكار.</p>
+      </div>
+
+      <!-- تبويبات التنقل -->
+      <ul class="nav nav-tabs justify-content-center mb-4 px-0" id="productTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active text-secondary" id="tab-all" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">الكل</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-secondary" id="tab-2023" data-bs-toggle="tab" data-bs-target="#y2023" type="button" role="tab" aria-controls="y2023" aria-selected="false">2023</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-secondary" id="tab-2024" data-bs-toggle="tab" data-bs-target="#y2024" type="button" role="tab" aria-controls="y2024" aria-selected="false">2024</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-secondary" id="tab-ai" data-bs-toggle="tab" data-bs-target="#ai" type="button" role="tab" aria-controls="ai" aria-selected="false">الذكاء الاصطناعي</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-secondary" id="tab-health" data-bs-toggle="tab" data-bs-target="#health" type="button" role="tab" aria-controls="health" aria-selected="false">التكنولوجيا الصحية</button>
+        </li>
+      </ul>
+
+      <!-- محتوى التبويبات -->
+      <div class="tab-content" id="productTabsContent">
+        <!-- تبويب الكل -->
+        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="tab-all">
+          <div class="row g-4">
+            <!-- تكرار المنتجات -->
+            <!-- ابدأ بإضافة المنتج -->
+            <!-- كرر هذا القسم حسب عدد المنتجات -->
+            <!-- مثال لمنتج -->
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../testImg/1.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+            <!-- منتج 2 -->
+<div class="col-md-4 product-card">
+  <div class="card h-100 bg-dark text-white">
+    <img src="../testImg/2.jpg" class="card-img-top" alt="تطبيق صحي">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">تطبيق صحة بلس</h5>
+      <p class="card-text">تطبيق لمراقبة الصحة واللياقة، مع اقتراحات غذائية وتمارين مخصصة.</p>
+      <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+    </div>
+  </div>
+</div>
+            <!-- ... نسخ إضافية -->
+             <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../testImg/3.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+            <!-- منتج 4 -->
+<div class="col-md-4 product-card">
+  <div class="card h-100 bg-dark text-white">
+    <img src="../testImg/3.jpg" class="card-img-top" alt="واقع افتراضي تعليمي">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">أكاديمية الواقع الافتراضي</h5>
+      <p class="card-text">بيئة تعليمية غامرة باستخدام الواقع الافتراضي لتجارب تعلم متقدمة.</p>
+      <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+    </div>
+  </div>
+</div>
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../testImg/4.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+           <!-- منتج 5 -->
+<div class="col-md-4 product-card">
+  <div class="card h-100 bg-dark text-white">
+    <img src="../testImg/5.jpg" class="card-img-top" alt="نظام إدارة مشاريع">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">نظام إدارة المشاريع الذكي</h5>
+      <p class="card-text">أداة تنظيم المشاريع والمهام بشكل ذكي مع تتبع الأداء وتحليله.</p>
+      <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+    </div>
+  </div>
+</div>
+            
+          </div>
+        </div>
+
+        <!-- تبويب 2023 -->
+        <div class="tab-pane fade" id="y2023" role="tabpanel" aria-labelledby="tab-2023">
+          <div class="row g-4">
+            <!-- منتجات 2023 -->
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../assets/img/altertsetion.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../testImg/3.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- تبويب 2024 -->
+        <div class="tab-pane fade" id="y2024" role="tabpanel" aria-labelledby="tab-2024">
+          <div class="row g-4">
+            <!-- منتجات 2024 -->
+          <!-- منتج  -->
+<div class="col-md-4 product-card">
+  <div class="card h-100 bg-dark text-white">
+    <img src="../testImg/3.jpg" class="card-img-top" alt="مترجم صوتي">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">المترجم الفوري الصوتي</h5>
+      <p class="card-text">أداة ترجمة صوتية لحظية باستخدام الذكاء الاصطناعي، تدعم عدة لغات.</p>
+      <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+
+        <!-- تبويب الذكاء الاصطناعي -->
+        <div class="tab-pane fade" id="ai" role="tabpanel" aria-labelledby="tab-ai">
+          <div class="row g-4">
+            <!-- منتجات الذكاء الاصطناعي -->
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../assets/img/altertsetion.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../assets/img/altertsetion.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../assets/img/altertsetion.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- تبويب التكنولوجيا الصحية -->
+        <div class="tab-pane fade" id="health" role="tabpanel" aria-labelledby="tab-health">
+          <div class="row g-4">
+            <!-- منتجات التكنولوجيا الصحية -->
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../assets/img/altertsetion.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../assets/img/altertsetion.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../assets/img/altertsetion.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 product-card">
+              <div class="card h-100 bg-dark text-white">
+                <img src="../assets/img/altertsetion.jpg" class="card-img-top" alt="صورة منتج">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">تسريع الوطنية</h5>
+                  <p class="card-text">تحويل الابتكار إلى أعمال عبر حلول يقودها رياديون ناشئون.</p>
+                  <a href="prodacts.html" class="btn btn-outline-light mt-auto">اقرأ المزيد</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- نهاية محتوى التبويبات -->
+    </div> <!-- نهاية الحاوية -->
+  </section>
+</section>
+
+
+  <!--end prodact section   -->
+ <!-- strat parallax img -->
+
+<div class="parallax-container">
+  <img src="../assets/img/backgeroundSections.jpg" class="parallax-img" alt="Background Image">
+  <!-- Optional content -->
+  <!--
+  <div class="parallax-content">
+    <h2>Parallax Section</h2>
+    <p>This is a demo of a parallax effect inside a fixed section</p>
+  </div>
+  -->
+</div>
+ <!-- end parallax img -->
+  <!-- start partners -->
+<section id="partners" class="partners-section text-center">
+  <h2 class="partners-title">شركاؤنا</h2>
+
+  <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <!-- Indicators -->
+    <div class="carousel-indicators mb-4">
+      <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="الشريحة 1"></button>
+      <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="1" aria-label="الشريحة 2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <!-- الشريحة 1 -->
+      <div class="carousel-item active">
+        <div class="row mx-5">
+          <div class="col-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" class="img-fluid" alt="مايكروسوفت">
+          </div>
+          <div class="col-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" class="img-fluid" alt="مايكروسوفت">
+          </div>
+          <div class="col-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" class="img-fluid" alt="مايكروسوفت">
+          </div>
+        </div>
+      </div>
+
+      <!-- الشريحة 2 -->
+      <div class="carousel-item">
+        <div class="row mx-5">
+          <div class="col-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="img-fluid" alt="أبل">
+          </div>
+          <div class="col-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="img-fluid" alt="أبل">
+          </div>
+          <div class="col-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="img-fluid" alt="أبل">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">السابق</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">التالي</span>
+    </button>
+  </div>
+
+  <!-- زر انضم إلى شركائنا -->
+  <div class="mt-5">
+    <a href="#contact" class="btn btn-outline-light btn-lg">انضم إلى شركائنا</a>
+  </div>
+</section>
+  <!-- end partners -->
+<!--start blog section-->
+<!-- <div class="blog-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-white">المقالات المميزة</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/article1/600/400" class="card-img-top" alt="صورة المقال 1">
+          <div class="card-body">
+            <h3 class="h5 fw-bold">عنوان المقال الأول</h3>
+            <p class="card-text">هذا مقتطف قصير من المقال يعطي نظرة سريعة لجذب القراء.</p>
+            <a href="article.html" class="btn btn-custom">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://picsum.photos/seed/article3/600/400" class="card-img-top" alt="صورة المقال 3">
+          <div class="card-body">
+            <h3 class="h5 fw-bold">عنوان المقال الثاني</h3>
+            <p class="card-text">هذا مقتطف موجز من المقال الثاني لجذب القارئ.</p>
+            <a href="article.html" class="btn btn-custom">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://picsum.photos/seed/article1/600/400" class="card-img-top" alt="صورة المقال 1">
+          <div class="card-body">
+            <h3 class="h5 fw-bold">عنوان المقال الثالث</h3>
+            <p class="card-text">مقتطف قصير من المقال الثالث لجذب الانتباه وتشجيع القراءة.</p>
+            <a href="article.html" class="btn btn-custom">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="article.html" class="btn btn-outline-light btn-lg">عرض جميع المقالات</a>
+    </div>
+  </div>
+</div> -->
+<!--end blog section-->
+ <!-- start section Contact Us -->
+<section class="contact" id="contact">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="text-white">تواصل <span class="text-primary">معنا</span></h2>
+    </div>
+
+    <div class="row">
+      <!-- العمود الأيسر: نموذج التواصل -->
+      <div class="col-md-6 mb-4">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label text-white-50">الاسم</label>
+            <input type="text" class="form-control" id="name" placeholder="أدخل اسمك" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-white-50">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label text-white-50">رقم الهاتف</label>
+            <input type="tel" class="form-control" id="phone" placeholder="مثلاً: 0791234567" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label text-white-50">الرسالة</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-outline-primary w-100">إرسال الرسالة</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- العمود الأيمن: معلومات الاتصال + الخريطة -->
+      <div class="col-md-6">
+        <div class="mb-4">
+          <h5 class="text-white">الهاتف</h5>
+          <p class="text-white-50">+962 79 123 4567</p>
+        </div>
+        <div class="mb-4">
+          <h5 class="text-white">البريد الإلكتروني</h5>
+          <p class="text-white-50">info@example.com</p>
+        </div>
+        <div class="mb-4">
+          <h5 class="text-white">تابعنا</h5>
+          <a href="#" class="text-white-50 me-2"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white-50 me-2"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-white-50"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+        <div class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=PUT_YOUR_VALID_MAP_LINK_HERE"
+            width="100%" height="250" style="border:0;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- end section Contact Us -->
+    
+</main>
+<!-- end main -->
+
+<!-- start footer -->
+<footer class="footer position-relative  text-white-50 pt-4 pb-3" dir="rtl">
+  <div class="position-absolute" style="left: 3px; bottom: 10px;">
+    <!-- زر الرجوع للأعلى داخل الفوتر -->
+    <a href="#top" class="btn btn-outline-light btn-sm rounded-circle" title="الرجوع للأعلى">
+      <i class="fas fa-chevron-up text-white"></i>
+    </a>
+  </div>
+
+  <div class="container position-relative">
+    <!-- قائمة الروابط -->
+    <div class="row mb-4">
+      <div class=" forter-aSide col-md-6 text-center text-md-end mb-3 mb-md-0">
+        <a href="#about" class="me-3 text-white-50 d-inline-block">من نحن</a>
+        <a href="#service" class="me-3 text-white-50 d-inline-block">خدماتنا</a>
+        <a href="#prodacts" class="me-3 text-white-50 d-inline-block">منتجاتنا</a>
+        <a href="#partners" class="me-3 text-white-50 d-inline-block">شركاؤنا</a>
+        <a href="#contact" class="text-white-50 d-inline-block">تواصل معنا</a>
+      </div>
+      <div class="col-md-6 text-center text-md-start">
+        
+         <a href="#" class="social-icon text-white-50 me-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon text-white-50 me-2"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="social-icon text-white-50 me-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon text-white-50 me-2"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon text-white-50"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <hr class="text-white">
+
+    <!-- الصف السفلي -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-end mb-3 mb-md-0">
+        <span class="text-white-50">© شركة سند لتقنية المعلومات. جميع الحقوق محفوظة.</span>
+      </div>
+      <div class="col-md-6 text-center text-md-start">
+       <a href="#" class="me-3 text-white-50 d-inline-block">سياسة الخصوصية</a>
+        <a href="#" class="text-white-50 d-inline-block">الشروط والأحكام</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- end footer -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/lang-toggle.js"></script>
+</body>
+</html>

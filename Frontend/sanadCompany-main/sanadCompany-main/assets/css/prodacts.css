@@ -1,0 +1,258 @@
+body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #19375C;
+     
+    }
+    
+.navbar {
+    background-color: #4175B0;
+}
+
+.logo-navbar {
+    width: 90px;
+    height: 90px;
+}
+.ar-en {
+    transition: color 0.5s linear;
+    left: 120px;
+    top: 40px;
+}
+.ar-en:hover {
+    
+color: white !important;
+}
+.navbar a {
+        transition: all 0.5s linear;
+
+}
+ /* to navbar on small screen */
+
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      padding: 1rem;
+      border-radius: 0 0 12px 12px;
+      transition: all 0.4s ease-in-out;
+      margin-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: #444;
+    }
+  }
+  .sanad-system {
+    transition: all 0.3s;
+       background-color: #254367 ;
+    border: none;
+}
+.btn-service {
+   transition: all 0.3s;
+  background-color: #254164;
+  border: none;
+}
+  /* end navbar */
+    /* start prodact */
+    .product {
+        background-color: #254164;
+    }
+    .title-section {
+      background-color: #0078AA;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .mainProdacts {
+      padding: 40px 20px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+      .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 منتجات فقط بجانب بعض */
+    gap: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .product-grid  .product-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+   .product-grid .product {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+   .product-grid .main-image {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+
+   .product-grid .thumbnails {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      overflow-x: auto;
+      background: #fafafa;
+    }
+
+  .product-grid  .thumbnails img {
+      width: 70px;
+      height: 50px;
+      object-fit: cover;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+
+   .product-grid .thumbnails img.active {
+      border-color: #0078AA;
+    }
+
+    .product-content {
+      padding: 15px 20px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-content h3 {
+      color: #0078AA;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+   .product-grid .tags {
+      margin-top: 10px;
+    }
+
+  .product-grid  .tag {
+      display: inline-block;
+      background: #eef3f9;
+      color: #0078AA;
+      padding: 5px 10px;
+      margin: 5px 5px 0 0;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .product-links {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+   .product-grid .btn-link {
+      padding: 8px 16px;
+      background-color: #0078AA;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      flex: 1 1 auto;
+      text-align: center;
+    }
+
+   .product-grid .btn-link:hover {
+      background-color: #005f7a;
+    }
+    /* end prodact  */
+      /* start section contact */
+        .contact {
+          background-color: #19375C;
+        }
+        .contact input,.contact textarea {
+          background-color: #395170;
+        }
+       .contact input:focus,
+.contact textarea:focus {
+  color: white !important;
+  background-color: #19375C !important; /* الخلفية تبقى بيضاء */
+}
+.contact button[type="submit"] {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: #4175B0;
+  color: white;
+  box-shadow: 0 4px 12px rgba(65, 117, 176, 0.4);
+}
+    /* end section contact */
+    /* start footer */
+  .footer {
+      background-color: #4175B0;
+      padding: 40px 0;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #212529;
+          transition: color 0.3s ease;
+    }
+    .footer a:hover {
+      color: #ffffff !important; 
+    }
+     .social-icon {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+  }
+
+  .social-icon:hover {
+    color: #ffffff !important; /* يغير اللون إلى الأبيض الكامل عند المرور */
+  }
+  footer a.btn{
+        transition: all 0.3s ease;
+
+  }
+footer a.btn:hover {
+  background-color: #395170;
+ 
+}
+
+
+
+
+    /* end foooter */
+  

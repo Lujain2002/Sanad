@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog Articles</title>
+    <link href="./assets/img/logo.jpg" rel="shortcut icon" type="image/x-icon">
+          <link href="./assets/lang-toggle.js" rel="preload" as="script">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/article.css">
+  
+</head>
+<body class=" text-white">
+
+<!-- start header -->
+    <header>
+        <div class=" header-main-div  d-flex flex-column justify-content-between ">
+        <!-- navbar -->
+            <nav class="navbar navbar-expand-lg  navbar-dark py-0">
+            <div class="container ">
+                <a class="navbar-brand logo-navbar col-2 mt-2" href="index.html"><img src="./assets/img/sanadLogo.png" class="w-100" alt="logo of sanad company"></a>
+  <!-- زر اللغة (يوضع يسارًا دائمًا) -->
+    <button class="btn btn-sm btn-outline-light d-none d-lg-inline" id="langToggle">العربية</button>           
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end flex-grow-0 col-9" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 " id="navList">
+                   <li class="nav-item">
+                    <a class="nav-link active text-white"  aria-current="page" href="index.html">Back to Homepage</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link text-white" onclick="slowScroll(event, 'articles')" href="#articles">Our Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link text-white" onclick="slowScroll(event, 'contact')" href="#contact">Contact</a>
+                    </li>
+                <!-- زر اللغة في الشاشات الصغيرة -->
+        <li class="nav-item mt-3 d-lg-none">
+          <button class="btn btn-sm btn-outline-light w-100"id="langToggle1">العربية</button>
+        </li>
+                </ul>
+                
+                </div>
+            </div>
+            </nav>
+<!-- end navbar -->
+
+        </div>
+
+
+    </header>
+     <!-- end header -->
+<section class="title-section py-4  text-center">
+ <h1>Our Blog</h1>
+<p class="lead">Explore insightful articles on AI, emerging technologies, and entrepreneurial innovation.</p>
+</section>
+
+
+<!-- start main -->
+ <main>
+    <!-- start article section -->
+
+<!-- Container -->
+<div class="container my-5" id="articles">
+  <div class="row">
+
+    <!-- Sidebar Filters -->
+    <aside class="col-md-3 mb-4">
+      <div class="list-group">
+        <button class="list-group-item list-group-item-action active" onclick="filterCategory('all')">All</button>
+        <button class="list-group-item list-group-item-action" onclick="filterCategory('ai')">Artificial Intelligence</button>
+        <button class="list-group-item list-group-item-action" onclick="filterCategory('tech')">Technology</button>
+        <button class="list-group-item list-group-item-action" onclick="filterCategory('biz')">Business</button>
+      </div>
+    </aside>
+
+    <!-- Article Content -->
+    <main class="col-md-9">
+
+      <!-- Article 1 (AI) -->
+      <article class="mb-5" data-category="ai">
+        <h2>How AI Is Transforming the Future of Business</h2>
+        <img src="./assets/img/logo.jpg" class="img-fluid rounded mb-3" alt="AI Article">
+        <p>AI is revolutionizing industries through automation, analytics, and decision-making tools.</p>
+        <blockquote class="blockquote">"AI is not the future, it's the present." — FutureTech</blockquote>
+        <p>From customer service bots to machine learning algorithms, companies worldwide are embracing AI to optimize operations and enhance value.</p>
+      </article>
+
+      <!-- Article 2 (AI) -->
+      <article class="mb-5" data-category="ai">
+        <h2>Natural Language Processing: The AI that Understands You</h2>
+        <img src="./assets/img/Our Approach.jpg" class="img-fluid rounded mb-3" alt="NLP Article">
+        <p>NLP is the bridge between human language and machines. From ChatGPT to smart assistants, NLP is transforming communication.</p>
+        <blockquote class="blockquote">"Language is power, and AI is learning it." — AI Weekly</blockquote>
+        <p>Applications span from healthcare to education, where language understanding automates and personalizes user experiences.</p>
+      </article>
+
+      <!-- Article 3 (Tech) -->
+      <article class="mb-5" data-category="tech">
+        <h2>Top Tech Trends in 2025 You Shouldn’t Miss</h2>
+        <img src="./assets/img/backgeroundSections.jpg" class="img-fluid rounded mb-3" alt="Tech Trends">
+        <p>Explore XR, quantum computing, and green cloud services reshaping the tech industry.</p>
+        <blockquote class="blockquote">"The only constant in tech is change." — InnovateDaily</blockquote>
+        <p>Understanding emerging technologies today is essential for tomorrow’s digital transformation.</p>
+      </article>
+
+      <!-- Article 4 (Tech) -->
+      <article class="mb-5" data-category="tech">
+        <h2>Edge Computing: Bringing the Cloud Closer</h2>
+        <img src="./assets/img/Our Approach.jpg" class="img-fluid rounded mb-3" alt="Edge Computing">
+        <p>Edge computing minimizes latency and improves performance by processing data near its source.</p>
+        <blockquote class="blockquote">"The cloud is moving closer — meet Edge." — TechWorld</blockquote>
+        <p>From IoT to autonomous vehicles, edge computing is at the heart of fast, real-time decision systems.</p>
+      </article>
+
+      <!-- Article 5 (Business) -->
+      <article class="mb-5" data-category="biz">
+        <h2>Entrepreneurship in the AI Era</h2>
+        <img src="./assets/img/logo.jpg" class="img-fluid rounded mb-3" alt="AI Business">
+        <p>Startups are using AI to disrupt markets, personalize services, and scale faster than ever before.</p>
+        <blockquote class="blockquote">"Innovate or be replaced — that’s the AI startup mantra." — Startup Pulse</blockquote>
+        <p>Discover how founders integrate AI into core products, marketing, and customer retention strategies.</p>
+      </article>
+
+      <!-- Article 6 (Business) -->
+      <article class="mb-5" data-category="biz">
+        <h2>Funding Tips for Tech Entrepreneurs</h2>
+        <img src="./assets/img/altertsetion.jpg" class="img-fluid rounded mb-3" alt="Funding Tips">
+        <p>Get insights on preparing pitch decks, dealing with VCs, and standing out in a competitive funding scene.</p>
+        <blockquote class="blockquote">"Investors back clarity, not just ideas." — VC Insider</blockquote>
+        <p>We’ll walk you through seed funding, Series A, and building strong investor relationships in the digital age.</p>
+      </article>
+
+    </main>
+  </div>
+</div>
+
+
+    <!-- end article section -->
+      <!-- start section Contact Us -->
+<section class="contact" id="contact">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="text-white">Contact <span class="text-primary">Us</span></h2>
+    </div>
+
+    <div class="row">
+      <!-- Left Column: Contact Form -->
+      <div class="col-md-6 mb-4" >
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label text-white-50">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-white-50">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label text-white-50">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="e.g. 0791234567" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label text-white-50">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-outline-primary w-100">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right Column: Contact Info + Map -->
+      <div class="col-md-6" >
+        <div class="mb-4">
+          <h5 class="text-white">Phone</h5>
+          <p class="text-white-50">+962 79 123 4567</p>
+        </div>
+        <div class="mb-4">
+          <h5 class="text-white">Email</h5>
+          <p class="text-white-50">info@example.com</p>
+        </div>
+        <div class="mb-4">
+          <h5 class="text-white">Follow Us</h5>
+          <a href="#" class="text-white-50 me-2"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white-50 me-2"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-white-50"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+        <div class="mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=PUT_YOUR_VALID_MAP_LINK_HERE"
+            width="100%" height="250" style="border:0;" 
+            allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section Contact Us -->
+
+ </main>
+
+ <!-- end main -->
+
+
+<!-- start footer -->
+ 
+  <footer class="footer position-relative  ">
+    
+    <div class="container position-relative">
+      <!-- Links Menu -->
+      <div class="row mb-4">
+        <div class="col-md-6 text-md-start text-white-50 text-center">
+          <a href="index.html" class="me-3 text-white-50">Homepage</a>
+        </div>
+        <div class="col-md-6 text-md-end text-center">
+         
+           <a href="#" class="social-icon text-white-50"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon text-white-50"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon text-white-50"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon text-white-50"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon text-white-50"><i class="fab fa-youtube"></i></a>
+          
+        </div>
+      </div>
+
+      <hr class="text-white">
+
+      <!-- Bottom Row -->
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">
+          <span class="text-white-50">© Sanad Information Technology. All rights reserved.</span>
+        </div>
+        <div class="col-md-6 text-md-end text-center">
+          <a href="#" class="me-3 text-white-50">Privacy Policy</a>
+          <a href="#" class="text-white-50">Terms & Conditions</a>
+        </div>
+       
+      </div>
+    </div>
+     
+  </footer>
+
+
+<!-- end footer -->
+
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+            <script src="./assets/js/lang-toggle.js"></script>
+
+</body>
+</html>
