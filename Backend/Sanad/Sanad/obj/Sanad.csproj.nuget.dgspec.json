@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\Sanad.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\Sanad.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\Sanad.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\Sanad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\Sanad.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\Sanad.csproj",
         "projectName": "Sanad",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\Sanad.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\Sanad.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.1, )"

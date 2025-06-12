@@ -4,8 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Sanad.Data;
 using Sanad.Data.Seeders;
 using Sanad.Models;
+using Sanad.Settings;
 using System;
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 namespace Sanad
 {
     public class Program
@@ -24,7 +27,26 @@ namespace Sanad
             builder.Services.AddIdentity<AppUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+            // Add services to the container
+            builder.Services.Configure<EmailConfig>(builder.Configuration.GetSection("EmailSettings"));
+            builder.Services.AddScoped<EmailSettings>();
 
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = builder.Configuration["JWT:Issuer"],
+                        ValidAudience = builder.Configuration["JWT:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(
+                            Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"])
+                        )
+                    };
+                });
 
             builder.Services.AddCors(options =>
             {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AsQGtsKd2NA/rEb7tG1llOATY7V0H+pD9KdQMfLNtzQ=",
+  "Hash": "9+HHQtKFO9l/gY9HstfAacpfCCc/1CsHzqd6xEKdoyE=",
   "Source": "Sanad",
   "BasePath": "_content/Sanad",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Sanad\\wwwroot",
       "Source": "Sanad",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\1.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\1.jpg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/1.jpg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\184aef5e-9486-4a63-8b6f-42610ee73f57.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\184aef5e-9486-4a63-8b6f-42610ee73f57.jpg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/184aef5e-9486-4a63-8b6f-42610ee73f57.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\184aef5e-9486-4a63-8b6f-42610ee73f57.jpg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\2.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\2.jpg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/2.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\2b06daff-ec5b-4727-b6c7-d30087e8f18e.jpeg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\2b06daff-ec5b-4727-b6c7-d30087e8f18e.jpeg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/2b06daff-ec5b-4727-b6c7-d30087e8f18e.jpeg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\2b06daff-ec5b-4727-b6c7-d30087e8f18e.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\3.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\3.jpg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/3.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\4.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\4.jpg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/4.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\5.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\5.jpg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/5.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\6680e6fe-087e-44ad-a0c6-130218946179.jpeg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\6680e6fe-087e-44ad-a0c6-130218946179.jpeg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/6680e6fe-087e-44ad-a0c6-130218946179.jpeg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\6680e6fe-087e-44ad-a0c6-130218946179.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\d10681a2-916d-465d-a84d-d6e4aae043d3.jpeg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\d10681a2-916d-465d-a84d-d6e4aae043d3.jpeg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/d10681a2-916d-465d-a84d-d6e4aae043d3.jpeg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\d10681a2-916d-465d-a84d-d6e4aae043d3.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\images.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\images.jpg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/images.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\ProductImages\\images.jpg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\ProductImages\\it-company-ahmedabad.jpeg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\ProductImages\\it-company-ahmedabad.jpeg",
       "SourceId": "Sanad",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Back End\\Sanad\\Sanad\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Sanad-Project\\Backend\\Sanad\\Sanad\\wwwroot\\",
       "BasePath": "_content/Sanad",
       "RelativePath": "ProductImages/it-company-ahmedabad.jpeg",
       "AssetKind": "All",
