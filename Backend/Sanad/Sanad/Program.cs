@@ -70,7 +70,9 @@ namespace Sanad
             {
                 var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
                 ServicesSeeders.Seed(context);
-                ProductsSeeders.Seed(context);
+                CategoryYearSeeder.Seed(context);
+                ProductsSeeder.Seed(context);
+                PartnerSeeders.SeedPartners(context);
             }
 
             // Configure the HTTP request pipeline.

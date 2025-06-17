@@ -20,31 +20,70 @@ namespace Sanad.Controllers
             this.dbContext = dbContext;
             this.env = env;
         }
-
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetAll([FromQuery] int? year, [FromQuery] string? category)
+        public async Task<ActionResult<IEnumerable<object>>> GetAll([FromQuery] int? year, [FromQuery] string? categoryName)
         {
-            var query = dbContext.Products.AsQueryable();
+            var query = dbContext.Products
+                                 .Include(p => p.Category)
+                                 .Include(p => p.ProductYear)
+                                 .AsQueryable();
 
             if (year.HasValue)
-                query = query.Where(p => p.Year == year.Value);
+                query = query.Where(p => p.ProductYear != null && p.ProductYear.YearValue == year.Value);
 
-            if (!string.IsNullOrWhiteSpace(category))
-                query = query.Where(p => p.Category.ToLower() == category.ToLower());
+            if (!string.IsNullOrWhiteSpace(categoryName))
+                query = query.Where(p => p.Category != null && p.Category.Name.ToLower() == categoryName.ToLower());
 
-            var products = await query.ToListAsync();
+            var products = await query
+                .Select(p => new
+                {
+                    p.Id,
+                    p.Title,
+                    p.Description,
+                    p.LongDescription,
+                    p.ImageUrl,
+                    p.Thumbnails,
+                    p.Tags,
+                    p.BuyLink,
+                    p.DetailsLink,
+                    p.DemoLink,
+                    p.CategoryId,
+                    p.ProductYearId,
+                    CategoryName = p.Category != null ? p.Category.Name : null,
+                    Year = p.ProductYear != null ? p.ProductYear.YearValue : (int?)null
+                }).ToListAsync();
+
             return Ok(products);
         }
 
+
+
         [HttpGet("{id}/ProductDetails")]
-        public async Task<ActionResult<Product>> GetById(int id)
+        public async Task<ActionResult<object>> GetById(int id)
         {
-            var product = await dbContext.Products.FindAsync(id);
+            var product = await dbContext.Products
+                                         .Include(p => p.Category)
+                                         .Include(p => p.ProductYear)
+                                         .FirstOrDefaultAsync(p => p.Id == id);
 
             if (product == null)
                 return NotFound("Product not found");
 
-            return Ok(product); 
+            return Ok(new
+            {
+                product.Id,
+                product.Title,
+                product.Description,
+                product.LongDescription,
+                product.ImageUrl,
+                product.Tags,
+                product.BuyLink,
+                product.DetailsLink,
+                product.DemoLink,
+                product.Thumbnails,
+                CategoryName = product.Category.Name,
+                Year = product.ProductYear.YearValue
+            });
         }
 
         [HttpPost("CreateProduct")]
@@ -73,18 +112,15 @@ namespace Sanad.Controllers
             {
                 foreach (var thumb in dto.Thumbnails)
                 {
-                    if (thumb.Length > 0)
+                    var thumbName = Guid.NewGuid().ToString() + Path.GetExtension(thumb.FileName);
+                    var thumbPath = Path.Combine(uploadsFolder, thumbName);
+
+                    using (var stream = new FileStream(thumbPath, FileMode.Create))
                     {
-                        var thumbName = Guid.NewGuid().ToString() + Path.GetExtension(thumb.FileName);
-                        var thumbPath = Path.Combine(uploadsFolder, thumbName);
-
-                        using (var stream = new FileStream(thumbPath, FileMode.Create))
-                        {
-                            await thumb.CopyToAsync(stream);
-                        }
-
-                        thumbnailsUrls.Add(thumbName);
+                        await thumb.CopyToAsync(stream);
                     }
+
+                    thumbnailsUrls.Add(thumbName);
                 }
             }
 
@@ -93,20 +129,20 @@ namespace Sanad.Controllers
                 Title = dto.Title,
                 Description = dto.Description,
                 LongDescription = dto.LongDescription,
-                Year = dto.Year ?? 0,
-                Category = dto.Category,
                 ImageUrl = fileName,
-                Thumbnails = thumbnailsUrls.Any() ? JsonSerializer.Serialize(thumbnailsUrls) : null,
                 Tags = dto.Tags,
                 BuyLink = dto.BuyLink,
                 DetailsLink = dto.DetailsLink,
-                DemoLink = dto.DemoLink
+                DemoLink = dto.DemoLink,
+                CategoryId = dto.CategoryId,
+                ProductYearId = dto.ProductYearId,
+                Thumbnails = thumbnailsUrls.Any() ? JsonSerializer.Serialize(thumbnailsUrls) : null
             };
 
             dbContext.Products.Add(product);
             await dbContext.SaveChangesAsync();
 
-            return Ok(new { message = "Product created successfully.", product });
+            return Ok(new { message = "Product created successfully.", product.Id });
         }
 
         [HttpPut("{id}/updateproductinfo")]
@@ -125,12 +161,6 @@ namespace Sanad.Controllers
             if (!string.IsNullOrEmpty(dto.LongDescription))
                 product.LongDescription = dto.LongDescription;
 
-            if (dto.Year.HasValue)
-                product.Year = dto.Year.Value;
-
-            if (!string.IsNullOrEmpty(dto.Category))
-                product.Category = dto.Category;
-
             if (!string.IsNullOrEmpty(dto.Tags))
                 product.Tags = dto.Tags;
 
@@ -142,6 +172,22 @@ namespace Sanad.Controllers
 
             if (!string.IsNullOrEmpty(dto.DemoLink))
                 product.DemoLink = dto.DemoLink;
+
+            if (dto.CategoryId > 0)
+            {
+                var categoryExists = await dbContext.Categories.AnyAsync(c => c.Id == dto.CategoryId);
+                if (!categoryExists)
+                    return BadRequest("Invalid CategoryId.");
+                product.CategoryId = dto.CategoryId;
+            }
+
+            if (dto.ProductYearId > 0)
+            {
+                var yearExists = await dbContext.ProductYears.AnyAsync(y => y.Id == dto.ProductYearId);
+                if (!yearExists)
+                    return BadRequest("Invalid ProductYearId.");
+                product.ProductYearId = dto.ProductYearId;
+            }
 
             if (dto.Thumbnails != null && dto.Thumbnails.Any())
             {
@@ -187,8 +233,6 @@ namespace Sanad.Controllers
             return Ok(new { message = "Product updated successfully" });
         }
 
-
-
         [HttpDelete("{id}/DeleteProduct")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
@@ -198,7 +242,6 @@ namespace Sanad.Controllers
 
             var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "ProductImages");
 
-            
             if (!string.IsNullOrEmpty(product.ImageUrl))
             {
                 var imagePath = Path.Combine(uploadsFolder, product.ImageUrl);
@@ -206,7 +249,6 @@ namespace Sanad.Controllers
                     System.IO.File.Delete(imagePath);
             }
 
-           
             if (!string.IsNullOrEmpty(product.Thumbnails))
             {
                 var thumbnails = JsonSerializer.Deserialize<List<string>>(product.Thumbnails);
@@ -226,9 +268,5 @@ namespace Sanad.Controllers
 
             return Ok(new { message = "Product deleted successfully" });
         }
-
-
-
     }
 }
-

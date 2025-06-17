@@ -19,11 +19,11 @@ namespace Sanad.DTO
         [FromForm(Name = "thumbnails")]
         public List<IFormFile>? Thumbnails { get; set; }
 
-        [FromForm(Name = "year")]
-        public int? Year { get; set; }
+        [FromForm(Name = "categoryid")]
+        public int? CategoryId { get; set; }
 
-        [FromForm(Name = "category")]
-        public string? Category { get; set; } = string.Empty;
+        [FromForm(Name = "productyearid")]
+        public int? ProductYearId { get; set; }
 
         [FromForm(Name = "tags")]
         public string? Tags { get; set; }

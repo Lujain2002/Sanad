@@ -1,10 +1,62 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   loadProducts("http://localhost:5261/api/products", "all-products");
-  loadProducts("http://localhost:5261/api/products?year=2023", "products-2023");
-  loadProducts("http://localhost:5261/api/products?year=2024", "products-2024");
-  loadProducts("http://localhost:5261/api/products?category=ai", "products-ai");
-  loadProducts("http://localhost:5261/api/products?category=health", "products-health");
+
+
+  loadYears();
+  loadCategories();
 });
+
+function loadYears() {
+  fetch("http://localhost:5261/api/productyears")
+    .then(res => res.json())
+    .then(years => {
+      years.forEach(year => {
+        const id = `y${year.yearValue}`;
+        console.log(year.yearValue);
+        addTabAndContent(`tab-${id}`, id, year.yearValue, `products-${id}`);
+        loadProducts(`http://localhost:5261/api/products?year=${year.yearValue}`, `products-${id}`);
+      });
+    })
+    .catch(err => console.error("Error loading years:", err));
+}
+
+function loadCategories() {
+  fetch("http://localhost:5261/api/categories")
+    .then(res => res.json())
+    .then(categories => {
+      categories.forEach(cat => {
+        const id = cat.name.toLowerCase().replace(/\s+/g, "-");
+        addTabAndContent(`tab-${id}`, id, cat.name, `products-${id}`);
+        loadProducts(`http://localhost:5261/api/products?categoryName=${cat.name}`, `products-${id}`);
+      });
+    })
+    .catch(err => console.error("Error loading categories:", err));
+}
+
+function addTabAndContent(tabId, tabTargetId, label, containerId) {
+  const tabList = document.getElementById("productTabs");
+  const tabContent = document.getElementById("productTabsContent");
+
+ 
+  const li = document.createElement("li");
+  li.className = "nav-item";
+  li.role = "presentation";
+
+  li.innerHTML = `
+    <button class="nav-link text-secondary" id="${tabId}" data-bs-toggle="tab" data-bs-target="#${tabTargetId}" type="button" role="tab" aria-controls="${tabTargetId}" aria-selected="false">${label}</button>
+  `;
+  tabList.appendChild(li);
+
+  const div = document.createElement("div");
+  div.className = "tab-pane fade";
+  div.id = tabTargetId;
+  div.setAttribute("role", "tabpanel");
+  div.setAttribute("aria-labelledby", tabId);
+
+  div.innerHTML = `<div class="row g-4" id="${containerId}"></div>`;
+  tabContent.appendChild(div);
+}
 
 function loadProducts(endpoint, containerId) {
   fetch(endpoint)
